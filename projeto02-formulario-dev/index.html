@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para DEV's</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="formulario">
+
+            <div class="cabecalho">
+                <h1>Cadastro de DEV's</h1>
+                <p>Preencha com suas informações</p>
+            </div>
+
+            <form>
+                <div class="dadospessoais">
+                
+                    <fieldset>
+                        <div class="nomecompleto">
+                            <div class="campo1">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" placeholder="" required>
+                            </div>
+                            <div class="campo2">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" id="sobrenome" placeholder="" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <label for="email">E-mail</label>
+                    <input id="campoemail" type="email" id="email" placeholder="seuemail@email.com" required>
+                </div> <!--fim fe dadospessoais-->
+                
+                
+                <div class="dadosprofissionais">
+                    <div class="especialidade">
+                        <div class="question"><label>De qual lado da aplicação você desenvolve? </label></div>
+                
+                        <div class="front">
+                            <input type="radio" id="frontend" name="especialidade">
+                            <label for="frontend">Front-end</label>
+                        </div>
+                        <back>
+                            <input type="radio" id="backend" name="especialidade">
+                            <label for="backend">Back-end</label>
+                        </back>
+                        <full>
+                            <input type="radio" id="fullstack" name="especialidade">
+                            <label for="fullstack">Full-stack</label>
+                        </full>
+                    </div> <!-- fim de .especialidade -->
+
+
+                    <div class="senioridade">
+                        <div class="question"><label for="senioridade">Senioridade</label></div>
+                        <select name="senioridade" id="senioridade">
+                            <option value="" selected disabled>Selecione</option>
+                            <option value="junior">Júnior</option>
+                            <option value="pleno">Pleno</option>
+                            <option value="senior">Sênior</option>
+                        </select>
+                    </div> <!--fim de senioridade-->
+                    <div class="tecnologias">
+                        <div class="question">
+                            <label>Selecione as tecnologias que você utiliza:</label>
+                        </div>
+                        <div id="respostas">
+                            <input type="checkbox" id="html">
+                            <label for="html">HTML</label>
+                            <input type="checkbox" id="css">
+                            <label for="css">CSS</label>
+                            <input type="checkbox" id="php">
+                            <label for="php">PHP</label>
+                            <input type="checkbox" id="js">
+                            <label for="js">JavaScript</label>
+                            <input type="checkbox" id="c#">
+                            <label for="c#">C#</label>
+                            <input type="checkbox" id="py">
+                            <label for="py">Python</label>
+                            <input type="checkbox" id="java">
+                            <label for="java">Java</label>
+                
+                        </div> <!--fim de .tecnologias-->
+                    </div> <!--fim de .tecnologias-->
+                    <div class="campotexto">
+                        <div class="question">
+                            <label>Conte um pouco mais sobre sua experiência!</label>
+                        </div>
+                        <div class="textbox">
+                            <textarea name="mensagem" id="mensagem" maxlength="1000">
+                                (máx 1000 caracteres)
+                            </textarea>
+                        </div>
+                    </div> <!--fim de .campotexto-->
+                </div> <!--fim de .dadosprofissionais-->
+
+                <div class="botao">
+                    <div class="botaosend">
+                        <button type="submit">Enviar</button>
+                    </div>
+                    <div class="botaoclean">
+                        <button type="reset">Limpar tudo</button>
+                    </div>
+                </div>
+
+            </form>
+        </div> <!-- fim de.formulario-->
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Verônica Franco</p>
+        <p>&copy; 2024 - Todos os direitos Reservados</p>
+    </footer>
+</body>
+
+</html>

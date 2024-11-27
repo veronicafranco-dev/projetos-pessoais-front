@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Urbanist", sans-serif;
+    font-weight: normal;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    padding: 25px 20px;
+    margin: 0 auto;
+    background-color: #242038;
+}
+
+header h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color: #F7ECE1;
+}
+
+header a{
+    text-decoration: none;
+    color: #F7ECE1;
+    padding-left: 10px;
+}
+
+header a:hover{
+    text-decoration: none;
+    color: #8D86C9;
+    padding-left: 10px;
+}
+
+.about section{
+    display: flex;
+    padding: 20px;
+    margin: 0 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutme img{
+    max-width: 500px;
+    padding-right: 30px;
+}
+
+.about section h2{
+    padding-bottom: 10px;
+    color: #242038;
+    font-size: 30px;
+}
+
+.about section p{
+    padding-bottom: 10px;
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.contato{
+    padding: 20px;
+    margin: 0 30px;
+}
+
+.contato h2{
+    padding-bottom: 20px;
+    color: #242038;
+    font-size: 30px;
+}
+
+.contato section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contato section h3{
+    padding-bottom: 10px;
+    color: #242038;
+    font-size: 20px;
+}
+
+form input{
+    border-style: solid;
+    border-color: #2420385b;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 4px 0;
+    font-size: 12px;
+}
+
+textarea{
+    height: 100px;
+    width: 250px;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 4px 0;
+    font-family: "Urbanist", sans-serif;
+    font-size: 12px;
+    resize: none;
+    overflow: scroll;
+}
+
+button{
+    background-color: #242038;
+    color: #F7ECE1;
+    padding: 5px 10px;
+    border: none;
+}
+
+button:hover{
+    background-color:#8D86C9;
+    color:#242038;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.social ul li a img{
+    max-width: 24px;
+}
+
+.social ul{
+    list-style: none;
+}
+
+footer{
+    display: flex;
+    height: 100px;
+    width: auto;
+    background-color: #242038;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: #F7ECE1;
+}

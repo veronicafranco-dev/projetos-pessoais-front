@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Projeto 1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonte externa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>Verônica Franco | Web Developer</h1>
+        <nav>
+            <a href="#aboutme" title="Ir para a seção 'Sobre mim'" aria-label="Ir para a seção 'Sobre mim'" target="_blank">Sobre mim</a>
+
+            <a href="#contato" title="Ir para a seção 'Contato'" aria-label="Ir para a seção de Contato" target="_blank">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about">
+
+            <section id="aboutme">
+
+                <div><img src="imagens/veronica.png" alt="foto da Desenvolvedora Verônica Franco"></div>
+
+                <div>
+                    <h2>Sobre mim</h2>
+                    <p>Graduanda em Engenharia de Software pela Faculdade Uniamerica, mãe, apaixonada por arqueologia, história e antropologia. Atualmente cursando Desenvolvimento Full-Stack pela EBAC afim de aprimorar meus conhecimentos na área dev! Surpreendentemente descobri a minha paixão pela área de TI ao ganhar uma bolsa para um curso introdutório de programação. Desde então, tenho procurado aprofundar cada vez mais os meus conhecimentos para me tornar uma profissional de excelência.</p>
+                </div>
+            </section> <!-- fim da section aboutme-->
+
+        </div> <!--fechamento da tag about-->
+
+            <div class="contato">
+                <h2>Contato</h2>
+                
+                <section id="contato">
+
+                    <div class="formulario">
+                        <form>
+                            <h3>Fale comigo!</h3>
+                            <div class="campo">
+                                <label for="name">Seu nome</label>
+                                <input type="text" id="name" placeholder="Nome Sobrenome" required>
+                            </div>
+                            <div class="campo">
+                                <label for="email">Seu e-mail</label>
+                                <input type="email" id="email" placeholder="email@email.com" required>
+                            </div>
+                            <div class="campo">
+                                <label for="phone">Seu telefone </label>
+                                <input type="tel" id="phone" placeholder="(00) 99999-9999" required>
+                            </div>
+                            <div class="campo">
+                                <textarea name="mensagem" id="mensagem" placeholder="" maxlength="1000" required>
+                                    Digite aqui a sua mensagem (máx. 1000 caracteres)
+                                </textarea>
+                            </div>
+                            <button type="submit" title="Concluir e enviar">Enviar</button>
+                            <button type="reset" title="Limpar tudo">Limpar</button>
+                        </form>
+                    </div> <!-- fechamento div formulario-->
+                    <div class="social">
+                        <h3>Me acompanhe nas redes!</h3>
+                        <ul>
+                            <li><a href="https://github.com/veronicafranco-dev" title="Ir para o perfil do GitHub">
+                                <img src="imagens/github.png" alt="ícone do GitHub">
+                            </a></li>
+                            <li><a href="https://www.linkedin.com/in/veronicafranco-dev/" title="Ir para o perfil do Linkedin">
+                                <img src="imagens/linkedin.png" alt="ícone do Linkedin">
+                            </a></li>
+                        </ul>
+                    </div> <!-- fechamento da div social-->
+                    <div class="location">
+                        <h3>Endereço</h3>
+                        <address>Rua da Imaginação nº 123 - Centro | São Paulo - SP</address>
+                    </div> <!-- fechamento da dic location-->
+                </section> <!--fim da section contato-->
+            </div> <!--fechamento div contato-->
+
+    </main>
+
+    <footer>
+        <div>
+        <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
